@@ -1,3 +1,13 @@
 function addProperty(obj, key) {
-  // your code here
+
+  obj[key] = true;
+  return obj; //solo retornar objeto
+ 
 }
+
+var myObj = {};
+
+addProperty(myObj, 'myProperty');
+console.log(myObj); // --> true  o { myProperty: true }
+
+//Ejercicio para agregar data a un objeto
