@@ -1,5 +1,12 @@
+//Filtrar palabras de longitud impar
 function filterOddLengthWords(words) {
-    // your code here
+    var impares = [];
+    for(var i = 0; i < words.length; i++){
+        if(words[i].length % 2 === 1){
+            impares.push(words[i]);
+        }
+    }
+    return impares;
 }
 
 var output = filterOddLengthWords(['there', 'it', 'is', 'now']);
